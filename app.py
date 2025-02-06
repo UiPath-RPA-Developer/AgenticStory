@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = st.secrets["openai"]["api_key"]  # or replace with openai.api_key = "YOUR_OPENAI_API_KEY"
+openai.api_key = st.secrets["OPENAI_API_KEY"]  # or replace with openai.api_key = "YOUR_OPENAI_API_KEY"
 client = openai.OpenAI(api_key=openai.api_key)
 
 def get_feedback(objective: str) -> str:
